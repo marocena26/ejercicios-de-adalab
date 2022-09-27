@@ -1,0 +1,64 @@
+:root{
+    --color-fuente-uno: white;
+    --color-fuente-dos: black; 
+    font-family: 'Roboto', sans-serif;
+    min-width: 1000px;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+
+}
+
+.logo {
+    width: 100px;
+    margin-left: 50px
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.link {
+    color: var(--color-fuente-uno);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 20px;
+    padding: 10px;
+}
+
+.main {
+    
+
+}
+
+.top {
+    background-color: blue;
+    background-image: url(../img/premium_dancer.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 50%;
+}
+
+.apartados {
+    font-weight: bold;
+}
+
+.footer {
+    background-color: black;
+    color: var(--color-fuente-uno);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+
+}

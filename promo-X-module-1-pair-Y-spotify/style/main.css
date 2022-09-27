@@ -26,18 +26,12 @@
     align-items: center;
 }
 
-
 .link {
     color: var(--color-fuente-uno);
     text-decoration: none;
     font-weight: bold;
     margin: 20px;
     padding: 10px;
-}
-
-.main {
-    
-
 }
 
 .top {

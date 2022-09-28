@@ -2,7 +2,7 @@
     --color-fuente-uno: white;
     --color-fuente-dos: black; 
     font-family: 'Roboto', sans-serif;
-    min-width: 1000px;
+    height: 100vh;
 }
 
 .header {
@@ -11,13 +11,20 @@
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
 }
 
 .logo {
     width: 100px;
-    margin-left: 50px
+    margin-left: 25px
+}
+
+.logo-menu {
+    width: 25px;
+    margin-right: 25px;
 }
 
 .menu {
@@ -34,17 +41,73 @@
     padding: 10px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
 .top {
-    background-color: blue;
+    background-color: rgb(28, 131, 214);
     background-image: url(../img/premium_dancer.png);
     background-repeat: no-repeat;
     background-position: right;
+    display: flex;
+    flex-direction: column;
     height: 50%;
 }
+
+.titulo-principal {
+    font-size: 64px;
+    color: var(--color-fuente-uno);
+}
+.parrafo-principal{
+    font-size: 26px;
+    color: var(--color-fuente-uno);
+}
+.ver-planes{
+    font-size: 16px;
+    color: var(--color-fuente-uno);
+    text-decoration: none;
+    background-color: green;
+    border-radius: 20px;
+    padding: 20px;
+}
+.nota{ 
+    font-size: 14px;
+    color: var(--color-fuente-uno);
+
+}
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    align-items: stretch;
+    height: 50%;
+}
+
+.titulo-premium {
+    font-size: 32px;
+}
+
+.premium {
+    display: flex;
+    flex-direction: column;
+   /* background-color: green;*/
+    
+}
+
+.img-premium {
+    width: 100px;
+}
+
+
 
 .apartados {
     font-weight: bold;
 }
+
 
 .footer {
     background-color: black;
@@ -52,7 +115,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
     height: 10vh;
-    width: 100vw;
+    width: 100%;
 
 }

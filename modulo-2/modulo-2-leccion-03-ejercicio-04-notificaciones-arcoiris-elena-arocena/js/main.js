@@ -1,19 +1,24 @@
-"use strict";
+'use stric';
 
-let div = document.querySelector(".js-div");
+const component = document.querySelector('.js-component');
+const title = document.querySelector('.js-title');
+const text = document.querySelector('.js-text');
 
-let text = document.querySelector(".js-text");
-let title = document.querySelector(".js-title");
+if (component.classList.contains('warning')) {
+    title.innerHTML = 'AVISO';
+    text.innerHTML = 'Tenga cuidado'; 
+} 
+
+else if (component.classList.contains('error')) {
+        title.innerHTML = 'ERROR';
+        text.innerHTML = 'Ha surgido un error'; 
+}
+
+else if (component.classList.contains('success')) {
+    title.innerHTML = 'CORRECTO';
+    text.innerHTML = 'Los datos son correctos'; 
+}
 
 
-if (div.classList.contains("warning")) 
-{text.innerHTML = "<p>Tenga cuidado</p>"} 
-else if (div.classList.contains("error")) 
-{text.innerHTML = "<p>Ha surgido un error</p>"} 
-else if (div.classList.contains("sucess")) 
-{text.innerHTML = "<p>Los datos son correctos</p>"}
-
-/* no sé cambiar la notificación  */
-
-
-
+// Utilizamos clasList.contains para comprobar que clases tiene dentro.
+// Se encadenan varios "else if" porque quiero que si no se cumple la primera condición pase a la siguiente, y así hasta que dé con la que le estoy solicitando.

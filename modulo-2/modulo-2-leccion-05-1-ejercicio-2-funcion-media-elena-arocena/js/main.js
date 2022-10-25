@@ -13,4 +13,4 @@ const d = 6;
 
 // Llamada a la función
 media(a,b,c,d);
-console.log(media(a,b,c,d));
+console.log(media(5,10,12,48));
